@@ -1,16 +1,26 @@
 
 
-# Install this, this is imp
+# Install this for BottonNAvigation
 
 ```sh
-npm install @react-navigation/native
-npm install @react-navigation/drawer
-npm install react-native-gesture-handler react-native-reanimated react-native-screens
+npm install @react-navigation/bottom-tabs
+npm install react-native-elements
+
+npm install react-native-vector-icons
+
+
+npm install @react-navigation/native @react-navigation/bottom-tabs react-native-screens react-native-safe-area-context react-native-vector-icons react-native-gesture-handler react-native-reanimated react-native-paper
+
 
 # if needed run this to execute the project
 npx react-native start --reset-cache
 
 ```
+
+<a href="https://reactnavigation.org/docs/bottom-tab-navigator/">bottomNAv</a>
+
+
+![Alt text](./images/my-photo.jpg)
 
 
 # IMP note 
