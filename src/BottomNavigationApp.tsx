@@ -8,13 +8,11 @@ import CourseList from '../components/BottomNavApp/CourseList';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import  { AboutStack } from '../components/NavigationApp/NavigationApp';
 
-
 const Tab = createBottomTabNavigator();
 
-export default function App() {
-    return (
-        <NavigationContainer>
-            <Tab.Navigator
+export default function BottomNavigationApp() {
+  return (
+    <Tab.Navigator
                 screenOptions={{
                     tabBarLabelPosition: 'below-icon',
                     tabBarShowLabel: true,
@@ -37,7 +35,7 @@ export default function App() {
                 />
 
                 {/* ///npm install react-native-vector-icons */}
-                        {/* Here is connected bottomnavigation with stack projectReact\components\NavigationApp */}
+                        {/* Here is connected bottomnavigation with stack projectReact\components\NavigationApp\AboutUs */}
                 <Tab.Screen
                     name="About"
                     component={AboutScreen}
@@ -71,9 +69,10 @@ export default function App() {
                     }}
                 />
             </Tab.Navigator>
-        </NavigationContainer>
-    );
+  )
 }
+
+
 
 const styles = StyleSheet.create({
     container: {

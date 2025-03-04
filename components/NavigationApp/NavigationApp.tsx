@@ -9,10 +9,10 @@ import AboutScreens from './AboutScreens';
 
 const Stack = createNativeStackNavigator();
 
-export default function NavigationApp() {
+export const AboutStack=()=>{
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home" >
+
+    <Stack.Navigator initialRouteName="Home" >
         <Stack.Screen
           name="Home"
           component={HomeScreens}
@@ -58,6 +58,13 @@ export default function NavigationApp() {
         />
 
       </Stack.Navigator>
+  )
+}
+
+export default function NavigationApp() {
+  return (
+    <NavigationContainer>
+      <AboutStack />
     </NavigationContainer >
   );
 }
